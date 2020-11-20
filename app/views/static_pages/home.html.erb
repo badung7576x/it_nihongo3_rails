@@ -2,4 +2,5 @@
 <h1>HOME PAGE</h1>
 <% if user_signed_in? %>
     <div> こんにちは  <%= current_user.email %></div>
+    <%= link_to "本一覧をみる", "/books" %>
 <% end %>
